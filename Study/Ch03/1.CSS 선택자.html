@@ -1,0 +1,56 @@
+<!--
+    날짜 : 2022/01/17
+    이름 : 양대석
+    내용 : CSS 선택자 실습
+    
+    class - 그룹을 의미하는 식별값을 지정하는 속성
+    id - 태그의 유일한 값을 지정하는 속성, 고유속성
+    id 와 class를 동시에 줄수도 있음
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>1.CSS 선택자</title>
+        <style>
+
+            /*전체 선택자*/     
+            *{                    /*  *:모든 것   */
+                color: blue
+            }
+
+            /*태그 선택자*/
+            h3{
+                color:orange
+            }
+            h4{
+                color:green
+            }
+
+            /*클래스 선택자*/
+            .tit{                                /*클래스를 나타내기위해서 .을 찍음 */
+                color:yellow
+            }
+
+            /*아이디 선택자*/
+            #tit1{                               /*클래스를 나타내기위해서 #을 찍음 */
+                color:red
+            }
+            #tit2{                              
+                color:rgb(221, 113, 113)
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h3>1.CSS 선택자</h3>
+
+        <h4>Hello CSS3</h4>
+        <h4 class="tit">Hello CSS3</h4>
+        <h4 class="tit">Hello CSS3</h4>
+        <h4 id="tit1">Hello CSS3</h4>
+        <h4 id="tit2">Hello CSS3</h4>
+        
+    </body>
+</html>
