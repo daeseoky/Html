@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>케이마켓 : 대한민국 1등 쇼핑몰</title>
+    <style>
+        /* 초기화 */
+        *{
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+
+        ul, ol{list-style: none;}
+        a{text-decoration: none; color: #111;}
+        input, textarea{outline: none;}
+
+        #wrapper{
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        /* 헤더 */
+        header{
+            width: 100%;
+            height: 197px;
+        }
+
+        header > div{
+            width: 100%;
+        }
+
+        header > div:nth-child(1){height: 35px;}
+        header > div:nth-child(1) > div > p{
+            position: absolute;
+            right: 0;
+            margin-top: 5px;
+            padding-right: 4px;
+            font-size: 14px;
+        }
+        
+        header > div:nth-child(2){height: 115px;}
+        header > div:nth-child(2) > div > img{
+            margin-top: 35px;
+        }
+
+        header > div:nth-child(3){
+            height: 46px;
+            background-color: rgb(232, 237, 238);
+        }
+        header > div:nth-child(3) > div > p:nth-child(1){
+            position: absolute;
+            left: 0;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        header > div:nth-child(3) > div > p:nth-child(2){
+            position: absolute;
+            right: 0;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        header > div > div{
+            position: relative;
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+
+        /* 푸터 */
+        footer{
+            width: 100%;
+            height: 192px;
+            border-top: 1px solid #e9e9e9;
+            background: #f8f8f8;
+            box-sizing: border-box;
+        }
+
+
+
+        /* 메인(index.html) */
+        main{
+            position: relative;
+            width: 1200px;
+            min-height: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            
+        }
+        
+        main .slider{
+            position: relative;
+            height: 447px;
+            overflow: hidden;
+        }
+        main .slider > ul {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        main .slider > ul > li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        main .slider > ul > li:nth-child(1) {left: 0; top: 0;}
+        main .slider > ul > li:nth-child(2) {left: 100%; top: 0;}
+        main .slider > ul > li:nth-child(3) {left: 200%; top: 0;}
+        main .slider > ul > li:nth-child(4) {left: 300%; top: 0;}
+        main .slider > ul > li:nth-child(5) {left: 400%; top: 0;}
+
+        main > aside{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 215px;
+            height: 100%;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        main > section{
+            float: right;
+            width: 985px;
+            height: 100%;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        
+        main > section > section{
+            width: 100%;
+            min-height: 700px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        main > section > section > h1{
+            font: bold 18px '고딕';
+        }
+
+        main > section > section > article{
+            float: left;
+            width: 25%;
+            min-height: 300px;
+            padding-left: 5px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        main > section > .slider{
+            min-height: initial ;
+            min-height: 425px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <div>
+                    <p>
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">마이페이지</a>
+                        <a href="#">장바구니</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./img/header_logo.png" alt="kmarket"/></div>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        <a href="#">히트상품</a>
+                        <a href="#">추천상품</a>
+                        <a href="#">최근상품</a>
+                        <a href="#">인기상품</a>
+                        <a href="#">할인상품</a>
+                    </p>
+                    <p>
+                        <a href="#">쿠폰존</a>
+                        <a href="#">사용후기</a>
+                        <a href="#">개인결제</a>
+                        <a href="#">고객센터</a>
+                        <a href="#">FAQ</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <li><img src="./img/thumb-popular-item1.jpg" alt="슬라이더1"></li>
+            </aside>
+            <section>
+                <section class="slider">
+                    <ul>
+                        <li><img src="./img/slider_item1.jpg" alt="슬라이더1"></li>
+                        <li><img src="./img/slider_item2.jpg" alt="슬라이더2"></li>
+                        <li><img src="./img/slider_item3.jpg" alt="슬라이더3"></li>
+                        <li><img src="./img/slider_item4.jpg" alt="슬라이더4"></li>
+                        <li><img src="./img/slider_item5.jpg" alt="슬라이더5"></li>
+                    </ul>
+                </section>
+                <section class="hit">
+                    <h1 a href="#">히트상품</h1>
+                    <article><img src="./img/thumb-sample-t1.jpg" alt="히트상품1"></article>
+                    <p>베이직 기모 레글런 차콜레이드2 차...</p>
+                    <p>신상 긴팔 티셔츠/남자옷 무지티 티셔...</p>
+                    <p>30,000원 10%</p>
+                    <p>27,000</p>
+                    <img src="./img/ico_freeshipping.gif" art="무료배송"/>
+                    <article><img src="./img/thumb-sample-t2.jpg" alt="히트상품2"></article>
+                    <article><img src="./img/thumb-sample-t3.jpg" alt="히트상품3"></article>
+                    <article><img src="./img/thumb-sample-t4.jpg" alt="히트상품4"></article>
+                    <article><img src="./img/thumb-sample-t5.jpg" alt="히트상품5"></article>
+                    <article><img src="./img/thumb-sample-t6.jpg" alt="히트상품6"></article>
+                    <article><img src="./img/thumb-sample-t7.jpg" alt="히트상품7"></article>
+                    <article><img src="./img/thumb-sample-t8.jpg" alt="히트상품8"></article>
+                </section>
+                <section class="recomment">
+                    <h1 a href="#">추천상품</h1>
+                    <article><img src="./img/230x230.png" alt="추천상품1"></article>
+                    <article><img src="./img/230x230.png" alt="추천상품2"></article>
+                    <article><img src="./img/230x230.png" alt="추천상품3"></article>
+                    <article><img src="./img/230x230.png" alt="추천상품4"></article>
+                    <article><img src="./img/230x230.png" alt="추천상품5"></article>
+                    <article><img src="./img/230x230.png" alt="추천상품6"></article>
+                    <article><img src="./img/230x230.png" alt="추천상품7"></article>
+                    <article><img src="./img/230x230.png" alt="추천상품8"></article>
+                </section>
+                <section class="new">
+                    <h1 a href="#">최신상품</h1>
+                    <article><img src="./img/230x230.png" alt="최신상품1"></article>             
+                    <article><img src="./img/230x230.png" alt="최신상품2"></article>             
+                    <article><img src="./img/230x230.png" alt="최신상품3"></article>             
+                    <article><img src="./img/230x230.png" alt="최신상품4"></article>             
+                    <article><img src="./img/230x230.png" alt="최신상품5"></article>             
+                    <article><img src="./img/230x230.png" alt="최신상품6"></article>             
+                    <article><img src="./img/230x230.png" alt="최신상품7"></article>             
+                    <article><img src="./img/230x230.png" alt="최신상품8"></article>             
+                </section>
+                <section class="discount">
+                    <h1 a href="#">할인상품</h1>
+                    <article><img src="./img/230x230.png" alt="할인상품1"></article>  
+                    <article><img src="./img/230x230.png" alt="할인상품2"></article>  
+                    <article><img src="./img/230x230.png" alt="할인상품3"></article>  
+                    <article><img src="./img/230x230.png" alt="할인상품4"></article>  
+                    <article><img src="./img/230x230.png" alt="할인상품5"></article>  
+                    <article><img src="./img/230x230.png" alt="할인상품6"></article>  
+                    <article><img src="./img/230x230.png" alt="할인상품7"></article>  
+                    <article><img src="./img/230x230.png" alt="할인상품8"></article>  
+                    
+                </section>
+            </section>
+            
+        </main>
+        <footer></footer>
+
+    </div>
+
+    <h1>헬로 케이마켓!</h1>
+</body>
+</html>
