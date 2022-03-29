@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>케이마켓::장바구니</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <style>
+        /* 상품 상세(view) */
+        #product-view {
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        #product-view > section{
+            width: 100%;
+            height: auto;
+        }
+        #product-view > section > article{
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        #product-view > section > .info{}
+        #product-view > section > .detail{}
+        #product-view > section > .notice{}
+        #product-view > section > .review{}
+
+
+    </style>
+
+
+
+</head>
+<body>    
+    <div id="wrapper">
+        <header>
+            <div class="top">
+                <div>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">마이페이지</a>
+                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;장바구니</a>
+                </div>
+            </div>
+            <div class="logo">
+                <div>
+                    <a href="#"><img src="../img/header_logo.png" alt="로고"/></a>
+                    <form action="#">
+                        <input type="text" name="search"/>
+                        <button><i class="fa fa-search"></i></button>
+                    </form>                
+                </div>
+                
+            </div>
+            <div class="menu">
+                <div>
+                    <ul>
+                        <li><a href="#">히트상품</a></li>
+                        <li><a href="#">추천상품</a></li>
+                        <li><a href="#">최신상품</a></li>
+                        <li><a href="#">인기상품</a></li>
+                        <li><a href="#">할인상품</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">쿠폰존</a></li>
+                        <li><a href="#">사용후기</a></li>
+                        <li><a href="#">개인결제</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <aside></aside>
+            <section id="product-view">
+
+                <!-- 상품상세 네비게이션 -->
+                <nav>
+                    <h1>FreeMovement BLUEFORCE</h1>
+                    <p>
+                        HOME > <span>패션·의류·뷰티</span> > <strong>남성의류</strong>
+                    </p>
+                </nav>
+
+                <section>
+                    <!-- 상품 기본정보-->
+                    <article class="info">
+                        <div>
+                            <img src="../img/thumb-sample-t1.jpg" alt="thumb-sample-t1"/>
+                            <p>
+                                (주)블루포스<br/>
+                                남자 셔츠 남방 남성 와이셔츠 체크남방 스트라이프<br/>
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- 상품 상세정보-->
+                    <h1>상품정보</h1>
+                    <article class="detail">
+                        <img src="../img/sample_detail1.jpg" alt="sample_detail1"/>
+                        <img src="../img/sample_detail2.jpg" alt="sample_detail2"/>
+                    </article>
+
+                    <!-- 상품 정보 제공 고시-->
+                    <h1>상품 정보 제공 공시</h1>
+                    <h2>전자상거래에 관한 상품정보 제공에 관한 고시] 항목에 의거 등록된 정보입니다.</h2>
+                
+                    <article class="notice">
+                        <table>
+                            <tr>
+                                <td>상품번호</td>
+                                <td>10110125435</td>
+                            </tr>  
+                            <tr>
+                                <td>상품상태</td>
+                                <td>새상품</td>
+                            </tr>  
+                            <tr>
+                                <td>부과세면세여부</td>
+                                <td>과세상품</td>
+                            </tr>  
+                            <tr>
+                                <td>영수증발행</td>
+                                <td>발행가능-신용카드 전표 온라인 현금영수증</td>
+                            </tr>  
+                            <tr>
+                                <td>사업자구분</td>
+                                <td>사업자 판매자</td>
+                            </tr>  
+                            <tr>
+                                <td>브랜드</td>
+                                <td>블루포스</td>
+                            </tr>  
+                            <tr>
+                                <td>원산지</td>
+                                <td>국내생산</td>
+                            </tr>  
+                            <tr>
+                                <td>제품소재</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>  
+                            <tr>
+                                <td>색상</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>  
+                            <tr>
+                                <td>치수</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>  
+                            <tr>
+                                <td>제조자/수입국</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>  
+                            <tr>
+                                <td>제조국</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>  
+                            <tr>
+                                <td>취급시 주의사항</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>  
+                            <tr>
+                                <td>제조연월</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>  
+                            <tr>
+                                <td>품질보증기준</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>   
+                            <tr>
+                                <td>A/S 책임자와 전화번호</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>  
+                            <tr>
+                                <td>주문후 예상 배송기간</td>
+                                <td>상세정보 직접입력</td>
+                            </tr>
+                            <tr>
+                                <td>구매, 교환, 반품, 배송, 설치 등과 관련하여 추가비용, 제한조건 등의 특이사항이 있는 경우</td>
+                            </tr>
+
+                        </table>
+                    </article>
+
+                    <!-- 상품 리뷰-->
+                    <h1>상품리뷰</h1>
+                    <article class="review"></article>
+                </section>
+
+                <!-- 상품목록 페이지번호 -->
+                <div class="paging">
+                    <span class="prev"><a href="#">이전</a></span>
+                    <span>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                    </span>
+                    <span class="next"><a href="#">다음</a></span>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">서비스이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">전자금융거래약관</a></li>
+            </ul>
+            <div>
+                <p><img src="../img/footer_logo.png" alt="로고"></p>
+                <p>
+                  <strong>(주)KMARKET</strong><br />
+                  부산시 강남구 테헤란로 152 (역삼동 강남파이낸스센터)<br />
+                  대표이사 : 홍길동<br />
+                  사업자등록번호 : 220-81-83676 사업자정보확인<br />
+                  통신판매업신고 : 강남 10630호 Fax : 02-589-8842
+                </p>
+                <p>
+                  <strong>고객센터</strong><br />
+                  Tel : 1234-5678 (평일 09:00~18:00)<br />
+                  스마일클럽/SVIP 전용 : 1522-5700 (365일 09:00~18:00)<br />
+                  경기도 부천시 원미구 부일로 223(상동) 투나빌딩 6층<br />
+                  Fax : 051-123-4567 | Mail : kmarket@kmarket.co.kr<br />
+                </p>
+              </div>              
+        </footer>
+    </div>
+</body>
+</html>
