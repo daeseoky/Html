@@ -92,8 +92,8 @@ header > .logo > div > form > input {
 
 header > .logo > div > form > button {
     position: absolute;
-    right: 6px;
-    top: 10px;
+    right: 15px;
+    top: 5px;
     background: #fff;
     border: none;
     font-size: 20px;
@@ -182,6 +182,227 @@ footer p > strong {
     font-weight: bold;
 }
 
+
+/* aside */
+aside.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 215px;
+    height: 100%;
+}
+
+aside.left > .category {
+    width: 100%;
+    padding: 0 0 10px;
+    background: #333949;
+    position: relative;
+    height: 425px;
+    box-sizing: border-box;
+}
+aside.left > .category i {
+    display: inline-block;
+    width: 22px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+aside.left > .category i.fa-angle-right {
+    float: right;
+    width: auto;
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+aside.left > .category > li {
+    border-bottom: 1px solid #2b313f;
+    background: none;
+    text-align: left;
+    height: 40px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+aside.left > .category > li:first-child {
+    padding: 0 20px;
+    color: #fff;
+    line-height: 40px;
+}
+
+aside.left > .category > li > a {
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #ccc;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+aside.left > .category > li > a:hover {
+    background: #2b313f;
+    color: #fff;
+}
+
+aside.left > .category > li > a.on {
+    background: #2b313f;
+    color: #fff;
+}
+
+aside.left > .category > li > ol {
+    display: none;
+    position: absolute;
+    left: 215px;
+    top: 0px;
+    z-index: 10000;
+    width: 215px;
+    height: 100%;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #787f89;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+aside.left > .category > li > ol > li {
+    height: 24px;
+}
+
+aside.left > .category > li > ol > li > a:hover{
+    color: #41ab47;
+    text-decoration: underline;
+}
+
+aside.left > .best {
+    width: 215px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 5px rgba(55,55,5,0.2));
+    -moz-box-shadow: 0 0 5px rgba(55,55,5,0.2));
+    box-shadow: 0 0 5px rgba(55,55,5,0.2);
+}
+aside.left > .best > h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #111;
+    margin: 6px;
+}
+aside.left > .best > h1 > i {
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+aside.left > .best > ol {}
+
+aside.left > .best > ol > li {
+    width: 100%;
+    height: 100%;
+    padding: 0 6px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+aside.left > .best > ol > li > a {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+aside.left > .best > ol > li:first-child > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+aside.left > .best > ol > li > a:hover h2 {
+    text-decoration: underline;
+}
+aside.left > .best > ol > li > a > .thumb {
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+aside.left > .best > ol > li:first-child > a > .thumb {
+    position: relative;
+    float: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+aside.left > .best > ol > li > a > .thumb > i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    font-size: 16px;
+    padding: 0;
+    color: #ef3e42;
+    border-bottom: 1px solid #ef3e42;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    line-height: 18px;
+}
+aside.left > .best > ol > li:first-child > a > .thumb > i {
+    width: 35px;
+    height: 26px;
+}
+
+aside.left > .best > ol > li > a > .thumb > img {
+    width: 100%;
+}
+
+aside.left > .best > ol > li > a > article {
+    float: left;
+    width: 151px;
+    padding-left: 6px;
+    box-sizing: border-box;
+}
+
+aside.left > .best > ol > li > a h2 {
+    margin-top: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+aside.left > .best > ol > li > a .org_price {}
+aside.left > .best > ol > li > a .org_price > del::after {content: "ì›";}
+aside.left > .best > ol > li > a .org_price > ins::after {content: "ì›";}
+aside.left > .best > ol > li > a .org_price > del {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10px;
+    color: #aaa;
+}
+aside.left > .best > ol > li > a .org_price > span {
+    color: #eb000a;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10px;
+}
+aside.left > .best > ol > li > a .org_price > span::after { content: "â†“"; }
+aside.left > .best > ol > li > a .dis_price {}
+aside.left > .best > ol > li > a .dis_price > ins {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+aside.left > .best > ol > li > a .dis_price > ins::after { content: "ì›"; }
+aside.left > .best > ol > li > a .dis_price > span {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: text-bottom;
+    width: 55px;
+    height: 13px;
+    background: url('../img/ico_freeshipping.gif') no-repeat;
+}
+
+
 /* 메인(index.html) */
 main {
     position: relative;
@@ -197,22 +418,16 @@ main > aside {
     top: 0;
     width: 215px;
     height: 100%;
-    border: 1px solid blue;
-    box-sizing: border-box;            
 }
 main > section {
     float: right;
     width: 985px;
     height: 100%;
-    border: 1px solid red;
-    box-sizing: border-box;
 }
 
 #main > section {
     width: 100%;
     min-height: 700px;
-    border: 1px solid blue;
-    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -220,30 +435,12 @@ main > section {
     float: left;
     width: 25%;
     min-height: 300px;
-    border: 1px solid green;
-    box-sizing: border-box;
 }
 
 #main > .slider {
     min-height: initial;
     height: 425px;
-
 }
-#main > .slider > ul {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-#main > .slider > ul > li {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-#main > .slider > ul > li:nth-child(1) {left: 0; top: 0;}
-#main > .slider > ul > li:nth-child(2) {left: 100%; top: 0;}
-#main > .slider > ul > li:nth-child(3) {left: 200%; top: 0;}
-#main > .slider > ul > li:nth-child(4) {left: 300%; top: 0;}
-#main > .slider > ul > li:nth-child(5) {left: 400%; top: 0;}
 
 /* 상품(product) 공통 */
 main > section > nav {}

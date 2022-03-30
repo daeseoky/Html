@@ -4,53 +4,11 @@
     <meta charset="UTF-8">
     <title>케이마켓::상품목록</title>
     <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/sub.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <style>
-        
-        
-        /* 상품 목록(list) */
-        #product-list {
-            padding: 16px;
-            box-sizing: border-box;
-        }
-
-        
-        
-        #product-list > ul.sort {}
-        #product-list > ul.sort > li {}
-        #product-list > ul.sort > li > a {}
-
-        #product-list > section {
-            width: 100%;
-            height: auto;            
-        }
-        #product-list > section > article {
-            width: 100%;
-            height: 200px;
-            box-sizing: border-box;
-        }
-        #product-list > section > article > ul {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        #product-list > section > article > ul > li {
-            float: left;
-            height: 100%;
-        }
-        #product-list > section > article > ul > li:nth-child(1) {width: 20%;}
-        #product-list > section > article > ul > li:nth-child(2) {width: 40%;}
-        #product-list > section > article > ul > li:nth-child(3) {width: 20%;}
-        #product-list > section > article > ul > li:nth-child(4) {width: 20%;}
-
-        #product-list > .paging{
-
-
-
-        }
-        
-
-        
-
         /* 상품 장바구니(cart) */
         #product-cart {}
 
@@ -82,7 +40,7 @@
                     <a href="#"><img src="../img/header_logo.png" alt="로고"/></a>
                     <form action="#">
                         <input type="text" name="search"/>
-                        <button><i class="fa fa-search"></i></button>
+                        <button type="submit"><i class="fas fa-search"></i></button>
                     </form>                
                 </div>
                 
@@ -107,8 +65,132 @@
             </div>
         </header>
 
-        <main>
-            <aside></aside>
+        <main id="sub">
+            <aside class="left">
+                <ul class="category">
+                    <li>
+                        <i class="fas fa-bars"></i>
+                        카테고리
+                    </li>
+                    <li>
+                        <a href="#" class>
+                            <i class="fas fa-tshirt"></i>
+                            패션·의류·뷰티
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class>
+                            <i class="fas fa-laptop"></i>
+                            가전·디지털
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class>
+                            <i class="fas fa-utensils"></i>
+                            식품·생필품
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class>
+                            <i class="fas fa-home"></i>
+                            홈·문구·취미
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <article class="best" style="position: static;">
+                    <h1>
+                        <i class="fas fa-crown"></i>
+                        베스트 상품
+                    </h1>
+                    <ol>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>1</i>
+                                    <img src="../img/thumb-popular-item1.jpg" alt="item1">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>2</i>
+                                    <img src="../img/thumb-sample-t1.jpg" alt="item2">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>3</i>
+                                    <img src="../img/thumb-sample-t2.jpg" alt="item3">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>4</i>
+                                    <img src="../img/thumb-sample-t3.jpg" alt="item4">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>5</i>
+                                    <img src="../img/thumb-sample-t4.jpg" alt="item5">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
+
+                </article>
+            </aside>
             <section id="product-list">
                 <!-- 제목, 페이지 네비게이션 -->
                 <nav>

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>케이마켓::장바구니</title>
     <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/sub.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>    
     <div id="wrapper">
@@ -46,9 +50,220 @@
             </div>
         </header>
 
-        <main>
-            <aside></aside>
-            <section id="product-cart"></section>
+        <main id="sub">
+            <aside class="left">
+                <ul class="category">
+                    <li>
+                        <i class="fas fa-bars"></i>
+                        카테고리
+                    </li>
+                    <li>
+                        <a href="#" class>
+                            <i class="fas fa-tshirt"></i>
+                            패션·의류·뷰티
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class>
+                            <i class="fas fa-laptop"></i>
+                            가전·디지털
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class>
+                            <i class="fas fa-utensils"></i>
+                            식품·생필품
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class>
+                            <i class="fas fa-home"></i>
+                            홈·문구·취미
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <article class="best" style="position: static;">
+                    <h1>
+                        <i class="fas fa-crown"></i>
+                        베스트 상품
+                    </h1>
+                    <ol>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>1</i>
+                                    <img src="../img/thumb-popular-item1.jpg" alt="item1">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>2</i>
+                                    <img src="../img/thumb-sample-t1.jpg" alt="item2">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>3</i>
+                                    <img src="../img/thumb-sample-t2.jpg" alt="item3">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>4</i>
+                                    <img src="../img/thumb-sample-t3.jpg" alt="item4">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>5</i>
+                                    <img src="../img/thumb-sample-t4.jpg" alt="item5">
+                                </div>
+                                <h2>TH-파스텔드레스 셔츠 - 그린</h2>
+                                <div class="org_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
+
+                </article>
+            </aside>
+            <section id="product-cart">
+                <!-- 제목, 페이지 네비게이션 -->
+                <nav>
+                    <h1>장바구니</h1>
+                    <p>
+                        HOME > <span>패션·의류·뷰티</span> > <strong>장바구니</strong>
+                    </p>
+                </nav>
+                <!--장바구니 상품 목록-->
+                <section action="#">
+                    <table border="0">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" name="all"/></th>
+                                <th>상품명</th>
+                                <th>총수량</th>
+                                <th>판매가</th>
+                                <th>할인</th>
+                                <th>포인트</th>
+                                <th>배송비</th>
+                                <th>소개</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr class="empty">
+                                <td colspan="7">장바구니에 상품이 없습니다</td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="#"/></td>
+                                <td>
+                                    <article>
+                                        <a href="#">
+                                            <img src="../img/thumb-sample-t2.jpg" alt>
+                                        </a>
+                                        <div>
+                                            <h2>
+                                                <a href="#">TH블락체크 셔츠-그레이2 [면세]</a>
+                                            </h2>
+                                            <p>SIZE:M / COLOR:블루1개</p>
+                                        </div>
+                                    </article>
+                                </td>
+                                <td>1</td>
+                                <td>27,000</td>
+                                <td>10%</td>
+                                <td>270</td>
+                                <td>무료배송</td>
+                                <td>25,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="button" name="del" value="선택삭제"/>
+
+                </section>
+                <!--장바구니 상품 전체 합계-->
+                <div class="total">
+                    <h2>전체합계</h2>
+                    <table border="0">
+                        <tr>
+                            <td>상품수</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>상품금액</td>
+                            <td>27,000</td>
+                        </tr>
+                        <tr>
+                            <td>할인금액</td>
+                            <td>1,000</td>
+                        </tr>
+                        <tr>
+                            <td>배송비</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>포인트</td>
+                            <td>260</td>
+                        </tr>
+                        <tr>
+                            <td>전체주문금액</td>
+                            <td>26,000</td>
+                        </tr>
+                    </table>
+                    <input type="button" name="" value="주문하기">
+                </div>
+            </section>
         </main>
 
         <footer>
