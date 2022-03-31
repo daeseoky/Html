@@ -278,8 +278,8 @@ aside.left > .best {
     border: 1px solid #dbdbdb;
     background: #fff;
     margin-bottom: 20px;
-    -webkit-box-shadow: 0 0 5px rgba(55,55,5,0.2));
-    -moz-box-shadow: 0 0 5px rgba(55,55,5,0.2));
+    -webkit-box-shadow: 0 0 5px rgba(55,55,5,0.2);
+    -moz-box-shadow: 0 0 5px rgba(55,55,5,0.2);
     box-shadow: 0 0 5px rgba(55,55,5,0.2);
 }
 aside.left > .best > h1 {
